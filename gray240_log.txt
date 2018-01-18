@@ -1,0 +1,12 @@
+gray240/gray240_128_RIIV_
+Total Diff: -50925
+Total Abs Diff: 457875
+Average Diff:-3.11
+StdDev. Diff: 62.48
+
+gray240/gray240_256_RIIV_
+Total Diff: -200070
+Total Abs Diff: 1835130
+Average Diff:-3.05
+StdDev. Diff: 62.47
+

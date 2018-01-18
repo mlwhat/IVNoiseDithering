@@ -1,0 +1,48 @@
+input/input_128Bayer
+Total Diff: 6014
+Total Abs Diff: 1666276
+Average Diff:0.37
+StdDev. Diff: 113.83
+
+input/input_128VNC
+Total Diff: -7246
+Total Abs Diff: 1671618
+Average Diff:-0.44
+StdDev. Diff: 114.19
+
+input/input_128blue16
+Total Diff: -413206
+Total Abs Diff: 1877890
+Average Diff:-25.22
+StdDev. Diff: 124.96
+
+input/input_128_RIIV_
+Total Diff: -132429
+Total Abs Diff: 1523905
+Average Diff:-8.08
+StdDev. Diff: 109.81
+
+input/input_256Bayer
+Total Diff: 1082
+Total Abs Diff: 6668498
+Average Diff:0.02
+StdDev. Diff: 113.87
+
+input/input_256VNC
+Total Diff: -42013
+Total Abs Diff: 6690621
+Average Diff:-0.64
+StdDev. Diff: 114.25
+
+input/input_256blue16
+Total Diff: -1361383
+Total Abs Diff: 7319099
+Average Diff:-20.77
+StdDev. Diff: 122.75
+
+input/input_256_RIIV_
+Total Diff: -548135
+Total Abs Diff: 6121001
+Average Diff:-8.36
+StdDev. Diff: 110.02
+

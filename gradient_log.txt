@@ -1,0 +1,12 @@
+gradient/gradient_128_RIIV_
+Total Diff: -277853
+Total Abs Diff: 1204301
+Average Diff:-16.96
+StdDev. Diff: 93.90
+
+gradient/gradient_256_RIIV_
+Total Diff: -1080871
+Total Abs Diff: 4851965
+Average Diff:-16.49
+StdDev. Diff: 94.50
+

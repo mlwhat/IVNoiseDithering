@@ -1,0 +1,12 @@
+gray235/gray235_128Bayer
+Total Diff: 5
+Total Abs Diff: 603955
+Average Diff:0.00
+StdDev. Diff: 68.56
+
+gray235/gray235_128VNC
+Total Diff: -15040
+Total Abs Diff: 616640
+Average Diff:-0.92
+StdDev. Diff: 69.97
+

@@ -1,0 +1,12 @@
+BabyHand/BabyHand_128_RIIV_
+Total Diff: -80394
+Total Abs Diff: 587106
+Average Diff:-4.91
+StdDev. Diff: 69.95
+
+BabyHand/BabyHand_256_RIIV_
+Total Diff: -307340
+Total Abs Diff: 2349738
+Average Diff:-4.69
+StdDev. Diff: 69.92
+

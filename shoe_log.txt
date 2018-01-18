@@ -1,0 +1,12 @@
+shoe/shoe_128_RIIV_
+Total Diff: -67757
+Total Abs Diff: 300123
+Average Diff:-4.14
+StdDev. Diff: 47.43
+
+shoe/shoe_256_RIIV_
+Total Diff: -266870
+Total Abs Diff: 1205740
+Average Diff:-4.07
+StdDev. Diff: 47.64
+
