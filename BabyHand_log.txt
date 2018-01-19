@@ -1,12 +1,60 @@
+BabyHand/BabyHand_128Bayer
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:0.00
+StdDev. Diff: 0.00
+
+BabyHand/BabyHand_128VNC
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+BabyHand/BabyHand_128blue16
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+BabyHand/BabyHand_128blueHighPass
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
 BabyHand/BabyHand_128_RIIV_
-Total Diff: -80394
-Total Abs Diff: 587106
-Average Diff:-4.91
-StdDev. Diff: 69.95
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+BabyHand/BabyHand_256Bayer
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:0.00
+StdDev. Diff: 0.00
+
+BabyHand/BabyHand_256VNC
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+BabyHand/BabyHand_256blue16
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+BabyHand/BabyHand_256blueHighPass
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
 
 BabyHand/BabyHand_256_RIIV_
-Total Diff: -307340
-Total Abs Diff: 2349738
-Average Diff:-4.69
-StdDev. Diff: 69.92
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
 

@@ -1174,15 +1174,15 @@ void DitherIVNoise(const SImageData& ditherImage, const char * file_size_type_Na
 
 	char outFileName[256];
 	strcpy(outFileName, file_size_type_Name);
-	strcat(outFileName, ".noise.bmp");
+	strcat(outFileName, "_noise.bmp");
 	ImageSave(noise, outFileName);
 	
 	strcpy(outFileName, file_size_type_Name);
-	strcat(outFileName, ".stipple.bmp");
+	strcat(outFileName, "_stipple.bmp");
 	ImageSave(dither, outFileName);
 
 	strcpy(outFileName, file_size_type_Name);
-	strcat(outFileName, ".stipple2.bmp");
+	strcat(outFileName, "_stipple2.bmp");
 	ImageSave(dither2, outFileName);
 
 
@@ -1224,7 +1224,7 @@ void DitherIVNoise(const SImageData& ditherImage, const char * file_size_type_Na
 
 		char buffer[256];
 		strcpy(buffer, file_size_type_Name);
-		strcat(buffer, ".dftMag.bmp");
+		strcat(buffer, "_dftMag.bmp");
 		ImageSave(noiseDFTMagResized, buffer);
 	}
 }
@@ -1286,7 +1286,7 @@ void DitherWithNoiseTexture(const SImageData& ditherImage, const char * outputSt
 	// save the image
 	char outFileName[256];
 	strcpy(outFileName, outputStr);
-	strcat(outFileName, ".stipple.bmp");
+	strcat(outFileName, "_stipple.bmp");
 	ImageSave(result, outFileName);
 }
 
@@ -1308,7 +1308,7 @@ void DitherInputNoise(const SImageData& ditherImage, const SImageData& inputNois
 		GetMagnitudeData(noiseDFT, noiseDFTMag);
 		char outFileName[256];
 		strcpy(outFileName, file_size_type_Name);
-		strcat(outFileName, ".dftMag.bmp");
+		strcat(outFileName, "_dftMag.bmp");
 
 		ImageSave(noiseDFTMag, outFileName);
 	}
@@ -1348,72 +1348,72 @@ void DitherAllWithDegrateResolution(SImageData &ditherImage ,const char * fileNa
 		ImageResize(ditherImage, img_resized,w, w);		
 		ImageSave(img_resized, outFileName);
 		
-		char file_size_type_Name[256];
-		/*
-			Dither with bayer matrix.
-		*/
-		SImageData BayerNoise;
-		sprintf(NoiseBuffer, "src/Bayer_%d.bmp", w);
-		if (!ImageLoad(NoiseBuffer, BayerNoise))
-		{
-			printf("Could not load %s", NoiseBuffer);
-			return;
-		}
-		
-		strcpy(file_size_type_Name, ditherfileName);
-		strcat(file_size_type_Name, "Bayer");
-		DitherInputNoise(img_resized, BayerNoise, file_size_type_Name, doDFT);
+		//char file_size_type_Name[256];
+		///*
+		//	Dither with bayer matrix.
+		//*/
+		//SImageData BayerNoise;
+		//sprintf(NoiseBuffer, "src/Bayer_%d.bmp", w);
+		//if (!ImageLoad(NoiseBuffer, BayerNoise))
+		//{
+		//	printf("Could not load %s", NoiseBuffer);
+		//	return;
+		//}
+		//
+		//strcpy(file_size_type_Name, ditherfileName);
+		//strcat(file_size_type_Name, "Bayer");
+		//DitherInputNoise(img_resized, BayerNoise, file_size_type_Name, doDFT);
 
-		/*
-			Dither with VNC mask.
-		*/
-		SImageData VNCNoise;		
-		sprintf(NoiseBuffer, "src/VNC%d.bmp",w);
-		if (!ImageLoad(NoiseBuffer, VNCNoise))
-		{
-			printf("Could not load %s", NoiseBuffer);
-			return ;
-		}
-		strcpy(file_size_type_Name, ditherfileName);
-		strcat(file_size_type_Name, "VNC");		
-		DitherInputNoise(img_resized, VNCNoise, file_size_type_Name, doDFT);
-		
+		///*
+		//	Dither with VNC mask.
+		//*/
+		//SImageData VNCNoise;		
+		//sprintf(NoiseBuffer, "src/VNC%d.bmp",w);
+		//if (!ImageLoad(NoiseBuffer, VNCNoise))
+		//{
+		//	printf("Could not load %s", NoiseBuffer);
+		//	return ;
+		//}
+		//strcpy(file_size_type_Name, ditherfileName);
+		//strcat(file_size_type_Name, "VNC");		
+		//DitherInputNoise(img_resized, VNCNoise, file_size_type_Name, doDFT);
+		//
 
-		/*
-			Dither with blue 16 mask.
-		*/
-		SImageData blueNoise;
-		sprintf(NoiseBuffer, "src/BN%d.bmp", w);
-		if (!ImageLoad(NoiseBuffer, blueNoise))
-		{
-			printf("Could not load %s", NoiseBuffer);
-			return;
-		}
+		///*
+		//	Dither with blue 16 mask.
+		//*/
+		//SImageData blueNoise;
+		//sprintf(NoiseBuffer, "src/BN%d.bmp", w);
+		//if (!ImageLoad(NoiseBuffer, blueNoise))
+		//{
+		//	printf("Could not load %s", NoiseBuffer);
+		//	return;
+		//}
 
-		strcpy(file_size_type_Name, ditherfileName);
-		strcat(file_size_type_Name, "blue16");
-		DitherInputNoise(img_resized, blueNoise, file_size_type_Name, doDFT);
+		//strcpy(file_size_type_Name, ditherfileName);
+		//strcat(file_size_type_Name, "blue16");
+		//DitherInputNoise(img_resized, blueNoise, file_size_type_Name, doDFT);
 
 
-		/*
-		Dither with blue high pass mask.
-		*/
-		SImageData blueNoiseHP;
-		sprintf(NoiseBuffer, "src/BNHP%d.bmp", w);
-		if (!ImageLoad(NoiseBuffer, blueNoiseHP))
-		{
-			printf("Could not load %s", NoiseBuffer);
-			return;
-		}
+		///*
+		//Dither with blue high pass mask.
+		//*/
+		//SImageData blueNoiseHP;
+		//sprintf(NoiseBuffer, "src/BNHP%d.bmp", w);
+		//if (!ImageLoad(NoiseBuffer, blueNoiseHP))
+		//{
+		//	printf("Could not load %s", NoiseBuffer);
+		//	return;
+		//}
 
-		strcpy(file_size_type_Name, ditherfileName);
-		strcat(file_size_type_Name, "blueHighPass");
-		DitherInputNoise(img_resized, blueNoiseHP, file_size_type_Name, doDFT);
-			
-		strcpy(file_size_type_Name, ditherfileName);
-		strcat(file_size_type_Name, "_RIIV_");
+		//strcpy(file_size_type_Name, ditherfileName);
+		//strcat(file_size_type_Name, "blueHighPass");
+		//DitherInputNoise(img_resized, blueNoiseHP, file_size_type_Name, doDFT);
+		//	
+		//strcpy(file_size_type_Name, ditherfileName);
+		//strcat(file_size_type_Name, "_RIIV_");
 
-		DitherIVNoise(img_resized, file_size_type_Name, doDFT);
+		//DitherIVNoise(img_resized, file_size_type_Name, doDFT);
 
 		
 	}
@@ -1554,15 +1554,15 @@ void ResolutionFreeIVNoiseTestWithLinearGradient(const char * prefix, int width,
 
 	char outFileName[256];
 	strcpy(outFileName, prefix);
-	strcat(outFileName, ".noise.bmp");
+	strcat(outFileName, "_noise.bmp");
 	ImageSave(noise, outFileName);
 
 	strcpy(outFileName, prefix);
-	strcat(outFileName, ".constant.bmp");
+	strcat(outFileName, "_constant.bmp");
 	ImageSave(ditherGray, outFileName);
 
 	strcpy(outFileName, prefix);
-	strcat(outFileName, ".gradient.bmp");
+	strcat(outFileName, "_gradient.bmp");
 	ImageSave(dithergradient, outFileName);
 
 
@@ -1604,7 +1604,7 @@ void ResolutionFreeIVNoiseTestWithLinearGradient(const char * prefix, int width,
 
 		char buffer[256];
 		strcpy(buffer, prefix);
-		strcat(buffer, ".dftMag.bmp");
+		strcat(buffer, "_dftMag.bmp");
 		ImageSave(noiseDFTMag, buffer);
 	}
 }
@@ -1645,9 +1645,9 @@ int fun1(int argc, char** argv)
 
 int main(int argc, char** argv)
 {
-	//return fun1(argc, argv);
+	return fun1(argc, argv);
 
-	fun2("IVNoise");
+	//fun2("IVNoise");
 
 }
 

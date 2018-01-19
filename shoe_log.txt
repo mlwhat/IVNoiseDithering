@@ -1,12 +1,60 @@
+shoe/shoe_128Bayer
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:0.00
+StdDev. Diff: 0.00
+
+shoe/shoe_128VNC
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+shoe/shoe_128blue16
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+shoe/shoe_128blueHighPass
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
 shoe/shoe_128_RIIV_
-Total Diff: -67757
-Total Abs Diff: 300123
-Average Diff:-4.14
-StdDev. Diff: 47.43
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+shoe/shoe_256Bayer
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:0.00
+StdDev. Diff: 0.00
+
+shoe/shoe_256VNC
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+shoe/shoe_256blue16
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+shoe/shoe_256blueHighPass
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
 
 shoe/shoe_256_RIIV_
-Total Diff: -266870
-Total Abs Diff: 1205740
-Average Diff:-4.07
-StdDev. Diff: 47.64
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
 

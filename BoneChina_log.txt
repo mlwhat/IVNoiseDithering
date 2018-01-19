@@ -1,12 +1,60 @@
+BoneChina/BoneChina_128Bayer
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:0.00
+StdDev. Diff: 0.00
+
+BoneChina/BoneChina_128VNC
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+BoneChina/BoneChina_128blue16
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+BoneChina/BoneChina_128blueHighPass
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
 BoneChina/BoneChina_128_RIIV_
-Total Diff: -269339
-Total Abs Diff: 1560831
-Average Diff:-16.44
-StdDev. Diff: 111.48
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+BoneChina/BoneChina_256Bayer
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:0.00
+StdDev. Diff: 0.00
+
+BoneChina/BoneChina_256VNC
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+BoneChina/BoneChina_256blue16
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+BoneChina/BoneChina_256blueHighPass
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
 
 BoneChina/BoneChina_256_RIIV_
-Total Diff: -1062257
-Total Abs Diff: 6260807
-Average Diff:-16.21
-StdDev. Diff: 111.61
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
 

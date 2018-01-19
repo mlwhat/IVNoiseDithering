@@ -1,12 +1,60 @@
+plant/plant_128Bayer
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:0.00
+StdDev. Diff: 0.00
+
+plant/plant_128VNC
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+plant/plant_128blue16
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+plant/plant_128blueHighPass
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
 plant/plant_128_RIIV_
-Total Diff: -123164
-Total Abs Diff: 557972
-Average Diff:-7.52
-StdDev. Diff: 64.86
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+plant/plant_256Bayer
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+plant/plant_256VNC
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+plant/plant_256blue16
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+plant/plant_256blueHighPass
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
 
 plant/plant_256_RIIV_
-Total Diff: -493971
-Total Abs Diff: 2235061
-Average Diff:-7.54
-StdDev. Diff: 64.70
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
 

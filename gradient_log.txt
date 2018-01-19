@@ -1,12 +1,60 @@
+gradient/gradient_128Bayer
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:0.00
+StdDev. Diff: 0.00
+
+gradient/gradient_128VNC
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+gradient/gradient_128blue16
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+gradient/gradient_128blueHighPass
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:0.00
+StdDev. Diff: 0.00
+
 gradient/gradient_128_RIIV_
-Total Diff: -277853
-Total Abs Diff: 1204301
-Average Diff:-16.96
-StdDev. Diff: 93.90
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+gradient/gradient_256Bayer
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+gradient/gradient_256VNC
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+gradient/gradient_256blue16
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
+
+gradient/gradient_256blueHighPass
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
 
 gradient/gradient_256_RIIV_
-Total Diff: -1080871
-Total Abs Diff: 4851965
-Average Diff:-16.49
-StdDev. Diff: 94.50
+Total Diff: zi
+Total Abs Diff: zi
+Average Diff:-1.#R
+StdDev. Diff: 0.00
 
