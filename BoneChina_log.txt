@@ -22,7 +22,7 @@ Total Abs Diff: zi
 Average Diff:-1.#R
 StdDev. Diff: 0.00
 
-BoneChina/BoneChina_128_RIIV_
+BoneChina/BoneChina_128RIIV_
 Total Diff: zi
 Total Abs Diff: zi
 Average Diff:-1.#R
@@ -52,7 +52,7 @@ Total Abs Diff: zi
 Average Diff:-1.#R
 StdDev. Diff: 0.00
 
-BoneChina/BoneChina_256_RIIV_
+BoneChina/BoneChina_256RIIV_
 Total Diff: zi
 Total Abs Diff: zi
 Average Diff:-1.#R

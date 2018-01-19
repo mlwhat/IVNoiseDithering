@@ -22,7 +22,7 @@ Total Abs Diff: zi
 Average Diff:-1.#R
 StdDev. Diff: 0.00
 
-shoe/shoe_128_RIIV_
+shoe/shoe_128RIIV_
 Total Diff: zi
 Total Abs Diff: zi
 Average Diff:-1.#R
@@ -52,7 +52,7 @@ Total Abs Diff: zi
 Average Diff:-1.#R
 StdDev. Diff: 0.00
 
-shoe/shoe_256_RIIV_
+shoe/shoe_256RIIV_
 Total Diff: zi
 Total Abs Diff: zi
 Average Diff:-1.#R

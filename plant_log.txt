@@ -22,7 +22,7 @@ Total Abs Diff: zi
 Average Diff:-1.#R
 StdDev. Diff: 0.00
 
-plant/plant_128_RIIV_
+plant/plant_128RIIV_
 Total Diff: zi
 Total Abs Diff: zi
 Average Diff:-1.#R
@@ -52,7 +52,7 @@ Total Abs Diff: zi
 Average Diff:-1.#R
 StdDev. Diff: 0.00
 
-plant/plant_256_RIIV_
+plant/plant_256RIIV_
 Total Diff: zi
 Total Abs Diff: zi
 Average Diff:-1.#R

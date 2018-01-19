@@ -1077,7 +1077,7 @@ void DitherIVNoise(const SImageData& ditherImage, bool doDFT = true, int num = 0
 	{
 		SImageDataComplex noiseDFT;
 		SImageData noiseDFTMag;
-		ImageDFT(dither2, noiseDFT);
+		ImageDFT(dither, noiseDFT);
 
 		GetMagnitudeData(noiseDFT, noiseDFTMag);
 		
@@ -1329,7 +1329,7 @@ void DitherAllWithDegrateResolution(SImageData &ditherImage ,const char * fileNa
 	for (int i = 7; i <= 8; ++i)
 	{
 		if (i >= 7 && i <= 8)
-			doDFT = false;
+			doDFT = true;
 		else 
 			doDFT = false;
 
@@ -1348,72 +1348,72 @@ void DitherAllWithDegrateResolution(SImageData &ditherImage ,const char * fileNa
 		ImageResize(ditherImage, img_resized,w, w);		
 		ImageSave(img_resized, outFileName);
 		
-		//char file_size_type_Name[256];
-		///*
-		//	Dither with bayer matrix.
-		//*/
-		//SImageData BayerNoise;
-		//sprintf(NoiseBuffer, "src/Bayer_%d.bmp", w);
-		//if (!ImageLoad(NoiseBuffer, BayerNoise))
-		//{
-		//	printf("Could not load %s", NoiseBuffer);
-		//	return;
-		//}
-		//
-		//strcpy(file_size_type_Name, ditherfileName);
-		//strcat(file_size_type_Name, "Bayer");
-		//DitherInputNoise(img_resized, BayerNoise, file_size_type_Name, doDFT);
+		char file_size_type_Name[256];
+		/*
+			Dither with bayer matrix.
+		*/
+		SImageData BayerNoise;
+		sprintf(NoiseBuffer, "src/Bayer_%d.bmp", w);
+		if (!ImageLoad(NoiseBuffer, BayerNoise))
+		{
+			printf("Could not load %s", NoiseBuffer);
+			return;
+		}
+		
+		strcpy(file_size_type_Name, ditherfileName);
+		strcat(file_size_type_Name, "Bayer");
+		DitherInputNoise(img_resized, BayerNoise, file_size_type_Name, doDFT);
 
-		///*
-		//	Dither with VNC mask.
-		//*/
-		//SImageData VNCNoise;		
-		//sprintf(NoiseBuffer, "src/VNC%d.bmp",w);
-		//if (!ImageLoad(NoiseBuffer, VNCNoise))
-		//{
-		//	printf("Could not load %s", NoiseBuffer);
-		//	return ;
-		//}
-		//strcpy(file_size_type_Name, ditherfileName);
-		//strcat(file_size_type_Name, "VNC");		
-		//DitherInputNoise(img_resized, VNCNoise, file_size_type_Name, doDFT);
-		//
+		/*
+			Dither with VNC mask.
+		*/
+		SImageData VNCNoise;		
+		sprintf(NoiseBuffer, "src/VNC%d.bmp",w);
+		if (!ImageLoad(NoiseBuffer, VNCNoise))
+		{
+			printf("Could not load %s", NoiseBuffer);
+			return ;
+		}
+		strcpy(file_size_type_Name, ditherfileName);
+		strcat(file_size_type_Name, "VNC");		
+		DitherInputNoise(img_resized, VNCNoise, file_size_type_Name, doDFT);
+		
 
-		///*
-		//	Dither with blue 16 mask.
-		//*/
-		//SImageData blueNoise;
-		//sprintf(NoiseBuffer, "src/BN%d.bmp", w);
-		//if (!ImageLoad(NoiseBuffer, blueNoise))
-		//{
-		//	printf("Could not load %s", NoiseBuffer);
-		//	return;
-		//}
+		/*
+			Dither with blue 16 mask.
+		*/
+		SImageData blueNoise;
+		sprintf(NoiseBuffer, "src/BN%d.bmp", w);
+		if (!ImageLoad(NoiseBuffer, blueNoise))
+		{
+			printf("Could not load %s", NoiseBuffer);
+			return;
+		}
 
-		//strcpy(file_size_type_Name, ditherfileName);
-		//strcat(file_size_type_Name, "blue16");
-		//DitherInputNoise(img_resized, blueNoise, file_size_type_Name, doDFT);
+		strcpy(file_size_type_Name, ditherfileName);
+		strcat(file_size_type_Name, "blue16");
+		DitherInputNoise(img_resized, blueNoise, file_size_type_Name, doDFT);
 
 
-		///*
-		//Dither with blue high pass mask.
-		//*/
-		//SImageData blueNoiseHP;
-		//sprintf(NoiseBuffer, "src/BNHP%d.bmp", w);
-		//if (!ImageLoad(NoiseBuffer, blueNoiseHP))
-		//{
-		//	printf("Could not load %s", NoiseBuffer);
-		//	return;
-		//}
+		/*
+		Dither with blue high pass mask.
+		*/
+		SImageData blueNoiseHP;
+		sprintf(NoiseBuffer, "src/BNHP%d.bmp", w);
+		if (!ImageLoad(NoiseBuffer, blueNoiseHP))
+		{
+			printf("Could not load %s", NoiseBuffer);
+			return;
+		}
 
-		//strcpy(file_size_type_Name, ditherfileName);
-		//strcat(file_size_type_Name, "blueHighPass");
-		//DitherInputNoise(img_resized, blueNoiseHP, file_size_type_Name, doDFT);
-		//	
-		//strcpy(file_size_type_Name, ditherfileName);
-		//strcat(file_size_type_Name, "_RIIV_");
+		strcpy(file_size_type_Name, ditherfileName);
+		strcat(file_size_type_Name, "blueHighPass");
+		DitherInputNoise(img_resized, blueNoiseHP, file_size_type_Name, doDFT);
+			
+		strcpy(file_size_type_Name, ditherfileName);
+		strcat(file_size_type_Name, "RIIV_");
 
-		//DitherIVNoise(img_resized, file_size_type_Name, doDFT);
+		DitherIVNoise(img_resized, file_size_type_Name, doDFT);
 
 		
 	}
@@ -1454,8 +1454,8 @@ void _Main(string file)
 
 string fileList[] = 
 {
-	"gray240",
-	"gradient",
+//	"gray240",
+//	"gradient",
 	"Face",
 	"BoneChina",
 	"BabyHand",
@@ -1619,10 +1619,10 @@ void fun2(string file)
 	string filePath = filename + "/" + filename;
 	char Num[256];
 	
-	for (int i = 4; i < 104; ++i)
+	for (int i = 51; i < 52; ++i)
 	{	
-		sprintf(Num, "%dx%d.bmp", i * 5,i);
-		ResolutionFreeIVNoiseTestWithLinearGradient((filePath + Num).c_str(), i * 5, i, false);
+		sprintf(Num, "%dx%d.bmp", 38,38);
+		ResolutionFreeIVNoiseTestWithLinearGradient((filePath + Num).c_str(), 38, 38, false);
 	}
 
 }
